@@ -53,13 +53,13 @@ void transform(char* buff)
 			std::regex("copy (" + varExp + ") to (" + varExp + ");"),
 			std::string("$2 = $1;")
 		},
-        {
+		{
 			std::regex("while (" + varExp + ") not 0 do;"),
 			std::string("while $1 ~=0 do")
 		},
-        {
+		{
 			std::regex("buggeroff;"),
-		    std::string("print(\"you could've just asked :'(\"); os.exit();")
+			std::string("print(\"you could've just asked :'(\"); os.exit();")
 		},
 		{
 			std::regex("init (" + varExp + ") = ([0-9]+);"),
